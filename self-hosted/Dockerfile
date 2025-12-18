@@ -7,6 +7,7 @@ COPY package.json bun.lock ./
 RUN bun install
 
 COPY self-hosted/run.sh .
+RUN sed -i 's/\r$//' ./run.sh
 COPY convex convex
 
 ENTRYPOINT ["/bin/bash", "./run.sh"]
