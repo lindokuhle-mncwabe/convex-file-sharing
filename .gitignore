@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-*.local
+*.localgit commit -m "Describe the changes made in this commit"
 
 # Editor directories and files
 .vscode/*
